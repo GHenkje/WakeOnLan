@@ -1,5 +1,5 @@
 # WakeOnLan
-Example of how to send the magic WakeOnLan message with c#.
+Example of how to send the magic wake on lan message with c#.
 Usage: 
 ```cs
 using WOL;
