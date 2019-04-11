@@ -22,20 +22,20 @@ namespace WOL
         /// Broadcast the magic WOL message.
         /// </summary>
         /// <param name="MacAddress">MacAdress of the target (001100110011 format)</param>
-        public static void Broadcast(string MacAddress, int Port = 9)
+        public static void Broadcast(string macAddress, int port = 9)
         {
-            UdpClient Client = new UdpClient() { EnableBroadcast = true };
-            Client.Connect(IPAddress.Broadcast, Port);
+            UdpClient client = new UdpClient() { EnableBroadcast = true };
+            client.Connect(IPAddress.Broadcast, port);
 
-            int Counter = 0;
-            byte[] Bytes = new byte[102];
-            for (int x = 0; x < 6; x++) Bytes[Counter++] = 0xFF;
+            int counter = 0;
+            byte[] bytes = new byte[102];
+            for (int x = 0; x < 6; x++) bytes[counter++] = 0xFF;
 
-            for (int MacPackets = 0; MacPackets < 16; MacPackets++)
-                for (int MacBytes = 0; MacBytes < 12; MacBytes += 2)
-                    Bytes[Counter++] = byte.Parse(MacAddress.Substring(MacBytes, 2), NumberStyles.HexNumber);
+            for (int macPackets = 0; macPackets < 16; macPackets++)
+                for (int macBytes = 0; macBytes < 12; macBytes += 2)
+                    bytes[counter++] = byte.Parse(macAddress.Substring(macBytes, 2), NumberStyles.HexNumber);
 
-            Client.Send(Bytes, Bytes.Length);
+            client.Send(bytes, bytes.Length);
         }
     }
 }
