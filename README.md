@@ -1,5 +1,5 @@
 <p align="center">
-  <b>WakeOnLan<b/>
+  <b>WakeOnLan</b>
   <br/>
   <img src="https://img.shields.io/badge/License-WTFPL-blue.svg">
   <img src="https://img.shields.io/badge/version-1.0.0-blue.svg">
