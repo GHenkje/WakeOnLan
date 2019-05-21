@@ -1,6 +1,7 @@
 <p align="center">
-  <h1>WakeOnLan</h1>
-  <img src="https://img.shields.io/badge/License-Do What The F*ck You Want To Public License-blue.svg">
+  <b>WakeOnLan<b/>
+  <br/>
+  <img src="https://img.shields.io/badge/License-WTFPL-blue.svg">
   <img src="https://img.shields.io/badge/version-1.0.0-blue.svg">
   <br/>
   <br/>
@@ -23,5 +24,4 @@ namespace Example
         }
     }
 }
-
 ```
