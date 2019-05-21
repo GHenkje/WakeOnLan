@@ -11,7 +11,8 @@ namespace Example
         static void Main(string[] args)
         {
             //Mac = 00-14-22-01-23-45
-            //So without the '-' char.
+            //Remove the "-" chars
+	    //WakeOnLan.Broadcast("00-14-22-01-23-45".Replace("-",""));
             WakeOnLan.Broadcast("001422012345");
         }
     }
