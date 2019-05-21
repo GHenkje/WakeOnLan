@@ -1,6 +1,13 @@
-# WakeOnLan
-Example of how to send the magic wake on lan message with c#.
-Usage: 
+<p align="center">
+  <b>WakeOnLan</b>
+  <br/>
+  <img src="https://img.shields.io/badge/License-WTFPL-blue.svg">
+  <img src="https://img.shields.io/badge/version-1.0.0-blue.svg">
+  <br/>
+  <br/>
+  <a>Example of how to send the magic wake on lan message with c#<a/>
+</p>
+
 ```cs
 using WOL;
 
@@ -17,5 +24,4 @@ namespace Example
         }
     }
 }
-
 ```
