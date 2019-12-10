@@ -16,7 +16,7 @@ namespace WOL
         /// <summary>
         /// Broadcast the magic WOL message.
         /// </summary>
-        /// <param name="macAddress">MacAdress of the target (001100110011 format)</param>
+        /// <param name="macAddress">MacAdress of the target (format: 001100110011 (The macAdress without all the ':' chars))</param>
         public static void Broadcast(string macAddress, int port = 9)
         {
             UdpClient client = new UdpClient() { EnableBroadcast = true };

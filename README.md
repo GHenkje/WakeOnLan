@@ -19,7 +19,7 @@ namespace Example
         {
             //Mac = 00-14-22-01-23-45
             //Remove the "-" chars
-	    //WakeOnLan.Broadcast("00-14-22-01-23-45".Replace("-",""));
+	    WakeOnLan.Broadcast("00-14-22-01-23-45".Replace("-",""));
             WakeOnLan.Broadcast("001422012345");
         }
     }
